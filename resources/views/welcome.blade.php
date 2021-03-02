@@ -54,10 +54,24 @@
             font-weight: bolder;
         }
 
+        #loginBtn:hover {
+            background-color: rgba(35, 230, 244, 0.10);
+            
+        }
+
         .footer {
             color: #898f8e;
             text-align: center;
             font-size: 75%;
+        }
+
+        .footer a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
         }
 
     </style>
@@ -87,7 +101,7 @@
                 @else
                 <br><br>
                 <div class="btn btn-primary" id="loginBtn">
-                    <a href="{{ route('login') }}" style="text-decoration: none ">Log in</a>
+                    <a href="{{ route('login') }}" style="text-decoration: none;">Log in</a>
                 </div>
                 @endauth
                 @endif
@@ -97,31 +111,32 @@
     </div>
 
     <!-- Footer 17-->
-    <div class="footer">
-        <thead>
-            <tr>
-                <th scope="col">About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th scope="col">Help Center&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th scope="col">Terns of Service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th scope="col">Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th scope="col">Cookie Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th scope="col">Ads info&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th scope="col">Blog&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th scope="col">Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th scope="col">Careers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th scope="col">Brand Resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th scope="col">Advertising&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th scope="col">Marketing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th scope="col">Twiiter for Business&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th scope="col">Developers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th scope="col">Directory&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th scope="col">Settings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th scope="col">&copy;2021 Twitter, Inc,</th>
-            </tr>
-        </thead>
+    
+        <div class="footer">
+            <thead>
+                <tr>
+                    <th scope="col"><a href="{{ route('about') }}">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Help Center&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Terns of Service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Cookie Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Ads info&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Blog&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Careers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Brand Resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Advertising&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Marketing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Twiiter for Business&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Developers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Directory&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Settings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">&copy; 2021 Twitter, Inc,</th>
+                </tr>
+            </thead>
+        </div>
     </div>
-    <br>
-
+<br>
 </body>
 
 </html>
