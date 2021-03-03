@@ -8,6 +8,7 @@
     <title>Twitter. It's what's happening/ Twitter</title>
 
     <!-- Fonts -->
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- Styles -->
