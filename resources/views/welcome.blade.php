@@ -44,7 +44,7 @@
         }
 
         .btn {
-            border-radius: 12px;
+            border-radius: 22px;
             width: 350px;
             height: 40px;
         }
