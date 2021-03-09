@@ -13,18 +13,59 @@
 <style>
     body {
         background-color: black;
+    }
+
+    .login {
         text-align: center;
-        align-items: center;
     }
 
     input {
         background-color: black;
-        width: 300px;
-        height: 60px;
+        width: 350px;
+        height: 65px;
+        color: white;
     }
+
+    #loginBtn {
+        background-color: #26a3c9;
+    }
+
+    ::-webkit-input-placeholder {
+         color: #999; 
+    }
+
+    :-moz-placeholder { 
+        color: #999; 
+    }
+
+    :focus::-webkit-input-placeholder { 
+        color: #26a3c9;
+
+    }
+
+    :focus:-moz-placeholder { 
+        color: #26a3c9;
+    }​
+
+    a:link {
+        color: #26a3c9;
+    }
+
+    a:visited, a:link, a:active
+    {
+        color: #26a3c9;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #26a3c9;
+        text-decoration: underline;
+    }
+
 </style>
 <body>
-    <div class="text-center">
+
+<div class="login">
     <br>
     <img src="images/logo.png" alt="logo" width="40px">
     <br><br>
@@ -48,21 +89,20 @@
                                     @enderror
                                         <br><br>
 
-                                    <button type="submit" class="btn btn-primary" style="width: 300px; border-radius: 22px; height: 45px;">
-                                        {{ __('Login') }}
+                                    <button id="loginBtn" type="submit" class="btn btn-primary" style="width: 350px; border-radius: 22px; height: 45px;">
+                                        {{ __('Log in') }}
                                     </button>
                                         <br><br>
                                     @if (Route::has('password.request'))
-                                        <a class="btn btn-link" href="{{ route('password.request') }}">
-                                            {{ __('Forgot Password?') }}
-                                        </a>
+                                        <a href="{{ route('password.request') }}">Forgot Password?</a>
                                         •
-                                        <a class="btn btn-link" href="{{ route('register') }}">
-                                            {{ __('Sign up for Twitter') }}
-                                        </a>
+                                        <a href="{{ route('register') }}">Sign up for Twitter</a>
                                     @endif
                         </form>
                     </div>
+                    </div>
+                    </div>
+                    
 </body>
 
 </html>
