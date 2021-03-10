@@ -6,16 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login on Twitter / Twitter</title>
     <link rel="icon" type="image/png" href="images/favicon.png"/>
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 
 <style>
     body {
         background-color: black;
-    }
-
-    .login {
         text-align: center;
     }
 
@@ -70,6 +66,7 @@
     <img src="images/logo.png" alt="logo" width="40px">
     <br><br>
                     <div style="color: white;"><h2>Log in to Twitter</h2></div>
+                    </div>
                         <br>
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
@@ -100,8 +97,8 @@
                                     @endif
                         </form>
                     </div>
-                    </div>
-                    </div>
+                </div>
+            
                     
 </body>
 
