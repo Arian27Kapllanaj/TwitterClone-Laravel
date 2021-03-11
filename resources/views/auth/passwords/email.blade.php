@@ -45,13 +45,15 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8">
                         <div class="card-body">
-                            <a href="{{ route('home') }}">Logo</a> Password Reset
+                        <p>
+                            <!-- Check later to change the href to route-->
+                            <a href="http://127.0.0.2/Twitter/public/"><img src="https://github.com/Arian27Kapllanaj/TwitterClone-Laravel/blob/master/public/images/favicon.png?raw=true" alt="twitter logo" width= "40px"></img></a> Password Reset
+                        </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
